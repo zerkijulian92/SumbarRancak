@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/tv_item_name"
-            android:text="Bukik Chinangkiek"
+            android:text="Name"
             style="@style/TextH1"
             android:layout_toRightOf="@id/img_item_photo"
             android:layout_width="match_parent"
@@ -45,7 +45,7 @@
 
         <TextView
             android:id="@+id/tv_alamat_lokasi"
-            android:text="Singkarak, X Koto Singkarak, Solok, Sumatera Barat 27356"
+            android:text="Remarks"
             style="@style/TextH3"
             android:layout_toRightOf="@id/img_item_photo"
             android:layout_below="@id/tv_lokasi_wisata"
