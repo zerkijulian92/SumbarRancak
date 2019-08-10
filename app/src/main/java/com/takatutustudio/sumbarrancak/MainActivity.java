@@ -1,5 +1,6 @@
 package com.takatutustudio.sumbarrancak;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         list = new ArrayList<>();
         list.addAll(WisataData.getListData());
         showRecyclerCardView();
+
     }
 
     private void showRecyclerCardView() {
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+// Menu Action Bar
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -53,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     private void setMode(int selectedMode) {
         switch (selectedMode) {
             case R.id.about:
+                Intent gotoabout = new Intent(MainActivity.this, About.class);
+                startActivity(gotoabout);
                 break;
         }
     }
