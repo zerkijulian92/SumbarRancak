@@ -1,8 +1,36 @@
 package com.takatutustudio.sumbarrancak;
 
-public class WisataSumbar {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class WisataSumbar implements Parcelable {
 
     private String name, remarks, photo, deskripsi;
+
+    protected WisataSumbar(Parcel in) {
+        name = in.readString();
+        remarks = in.readString();
+        photo = in.readString();
+        deskripsi = in.readString();
+    }
+
+    public static final Creator<WisataSumbar> CREATOR = new Creator<WisataSumbar>() {
+        @Override
+        public WisataSumbar createFromParcel(Parcel in) {
+            return new WisataSumbar(in);
+        }
+
+        @Override
+        public WisataSumbar[] newArray(int size) {
+            return new WisataSumbar[size];
+        }
+    };
+
+
+    public WisataSumbar(){
+
+    }
+
 
     public String getName() {
         return name;
@@ -34,5 +62,19 @@ public class WisataSumbar {
 
     public void setDeskripsi(String deskripsi) {
         this.deskripsi = deskripsi;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(this.name);
+        parcel.writeString(this.remarks);
+        parcel.writeString(this.photo);
+        parcel.writeString(this.deskripsi);
+
     }
 }

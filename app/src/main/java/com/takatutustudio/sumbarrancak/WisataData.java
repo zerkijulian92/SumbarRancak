@@ -27,16 +27,16 @@ public class WisataData {
 
     };
     public static ArrayList<WisataSumbar> getListData(){
-        WisataSumbar wisataSumbar = null;
+        WisataSumbar wisatasumbar = null;
         ArrayList<WisataSumbar> list = new ArrayList<>();
         for (int i = 0; i<data.length; i++){
-            wisataSumbar = new WisataSumbar();
-            wisataSumbar.setName(data[i][0]);
-            wisataSumbar.setRemarks(data[i][1]);
-            wisataSumbar.setPhoto(data[i][2]);
-            wisataSumbar.setDeskripsi(data[i][3]);
+            wisatasumbar = new WisataSumbar();
+            wisatasumbar.setName(data[i][0]);
+            wisatasumbar.setRemarks(data[i][1]);
+            wisatasumbar.setPhoto(data[i][2]);
+            wisatasumbar.setDeskripsi(data[i][3]);
 
-            list.add(wisataSumbar);
+            list.add(wisatasumbar);
         }
 
         return list;

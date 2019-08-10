@@ -61,8 +61,20 @@
             android:layout_height="wrap_content">
             
             <Button
-                android:id="@+id/btn_set_detail"
-                android:text="Detail"
+            android:id="@+id/btn_set_detail"
+            android:text="Detail"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/mmedium"
+            android:textSize="11sp"
+            android:backgroundTint="@color/colorHijauLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_set_share"
+                android:text="Share"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:fontFamily="@font/mmedium"
