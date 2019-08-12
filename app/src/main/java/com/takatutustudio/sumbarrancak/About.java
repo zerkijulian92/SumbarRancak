@@ -14,6 +14,12 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
+        //Merubah judul halaman Detail Wisata
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Copyright");
+        }
+        //----
+
         btn_back    = findViewById(R.id.btn_back);
 
         btn_back.setOnClickListener(new View.OnClickListener() {

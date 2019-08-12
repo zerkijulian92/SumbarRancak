@@ -14,13 +14,16 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rvCategory;
     private ArrayList<WisataSumbar>list;
 
-
-
+    private String title = "Sumbar Rancak"; // merubah judul halaman
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setActionBarTitle(title);
+
+
         rvCategory = (RecyclerView)findViewById(R.id.rv_category);
         rvCategory.setHasFixedSize(true);
 
@@ -29,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
         showRecyclerCardView();
 
     }
+
+    //Merubah Judul Halaman
+    private void setActionBarTitle(String title) {
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(title);
+
+        }
+    }
+
 
     private void showRecyclerCardView() {
         rvCategory.setLayoutManager(new LinearLayoutManager(this));

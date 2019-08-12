@@ -58,7 +58,7 @@ public class CardViewWisataAdapter extends RecyclerView.Adapter<CardViewWisataAd
        holder.btnsahre.setOnClickListener(new CustomOnitemClickListener(position, new CustomOnitemClickListener.OnItemClickCallback() {
            @Override
            public void onItemClicked(View view, int position) {
-               Toast.makeText(context, "Share" + getListWisataSumbar().get(position).getName(), Toast.LENGTH_SHORT).show();
+               Toast.makeText(context, "Share " + getListWisataSumbar().get(position).getName(), Toast.LENGTH_SHORT).show();
            }
        }) {
            @Override

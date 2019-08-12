@@ -12,7 +12,16 @@ public class DetailWisataAcitivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_wisata);getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setContentView(R.layout.activity_detail_wisata);
+
+
+        //Merubah judul halaman Detail Wisata
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Detail Wisata");
+        }
+        //----
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         WisataSumbar wisatasumbarditerima = getIntent().getParcelableExtra("key");
 
 
@@ -30,6 +39,10 @@ public class DetailWisataAcitivity extends AppCompatActivity {
         Log.i("deskripsi", wisatasumbarditerima.getDeskripsi());
 
 
+
+
     }
+
+
 
 }
