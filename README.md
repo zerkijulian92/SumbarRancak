@@ -35,7 +35,7 @@ Sumbar Rancak merupakan aplikasi mobile untuk Mengetahui informasi 10 Wisata Pun
 SERTIFIKAT KELULUSAN DARI DICODING
 -----
 
-https://github.com/zerkijulian92/SumbarRancak/issues/1#issue-479939322
+![Sertifikat Kelulusan Belajar Membuat Aplikasi Android untuk Pemula 1](https://user-images.githubusercontent.com/50509675/62912659-4cfdae00-bdb3-11e9-8a30-ae05c09c8a73.png)
 
 
 ttd
